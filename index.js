@@ -46,7 +46,7 @@ app.use('/api/users', users);
 app.use('/api/friends', friends);
 
 
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   res.send('Welcome');
 });
 
