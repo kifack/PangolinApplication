@@ -1,0 +1,18 @@
+<div>
+	<h3 class="text-center my-3 text-primary">Tous les Pangolins inscrits</h3>
+		<div *ngIf="users">
+			<div class="row">
+				<div class="col-md-4" *ngFor="let item of users">
+					 <div class="card border-light mb-3" style="max-width: 20rem;">
+					  <div class="card-header text-primary ">{{ item.name }}</div>
+					  <div class="card-body">
+					    <!-- <h4 class="card-title ">Light card title</h4> -->
+					    <p class="card-text">{{ item.email }}</p>
+					    <button class="btn btn-outline-primary" (click)="addFriend(item._id)">Ajouter à mes amis</button>
+					 
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

@@ -1,0 +1,27 @@
+
+<div class="row">
+	<div class="col-md-9">
+		<h2 class="text-primary text-center">Tous mes amis</h2 >
+		
+
+		<div class="row">
+		   <app-friend-details (deleteFriend)="deleteFriend($event)" *ngFor="let friend of friends" [friend]="friend"></app-friend-details>
+		</div>
+
+
+	</div>
+	<div class="col-md-3 mt-4">
+		
+		<div class="list-group">
+		  <a href="#" class="list-group-item list-group-item-action active">
+		   Nom:  {{ user.name }}
+		  </a>
+		  <a href="#" class="list-group-item list-group-item-action">Adresse mail: {{   user.email }}
+		  </a>
+		  <a href="#" class="list-group-item list-group-item-action disabled">Famille:{{   user.family }}
+		  </a>
+		  <a href="#" class="list-group-item list-group-item-action disabled">Age:<span class="badge badge-secondary">{{   user.age }}</span>
+		  </a>
+       </div>
+	</div>
+</div>

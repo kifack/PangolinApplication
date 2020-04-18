@@ -1,0 +1,15 @@
+<div class="col-md-6 my-2" >
+	<div class="card" style="width: 18rem;">
+			 
+			  
+	    <ul class="list-group list-group-flush">
+			    <li class="list-group-item">Nom: {{friend.friend.name}}</li>
+			    <li class="list-group-item">Email: {{friend.friend.email}}</li>
+			    <li class="list-group-item">Famille: {{friend.friend.family}}</li>
+			    <li class="list-group-item">Age: {{friend.friend.age}}</li>
+			    <li class="list-group-item">Nourriture: {{friend.friend.food}}</li>
+			    <li class="list-group-item"><a (click)="deleteOneFriend(friend)" class="card-link text-danger" style="cursor: pointer;">Supprimer</a></li>
+			  </ul>
+			  
+	</div>
+</div>

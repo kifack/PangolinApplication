@@ -1,0 +1,17 @@
+<div class="row">
+   <div class="col-md-6 mx-auto">
+   	  
+		<h2 class="page-header text-center text-primary">Connexion</h2>
+		<form (submit)="loginUser()" >
+		  <div class="form-group">
+		    <label for="email">Email</label>
+		    <input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrez votre email">
+		  </div>
+		  <div class="form-group">
+		    <label for="password">Mot de passe</label>
+		    <input type="password" [(ngModel)]="password" name="password" class="form-control" id="password" placeholder=" Entrez le mot de passe">
+		  </div>
+		  <input type="submit" class="btn btn-primary" value="Se connecter">
+		</form>
+   </div>
+</div>
