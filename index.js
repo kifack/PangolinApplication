@@ -23,7 +23,6 @@ const app = express();
 
 const users = require('./routes/user.route');
 const friends = require('./routes/friend.route');
-console.log(users);
 
 const port = process.env.PORT || 8080;
 
@@ -45,10 +44,6 @@ require('./config/passport')(passport);
 app.use('/api/users', users);
 app.use('/api/friends', friends);
 
-
-app.get('/api/users/test', (req, res) => {
-  res.json({msg:"It'sworking"});
-});
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
