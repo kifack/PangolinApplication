@@ -45,10 +45,8 @@ app.use('/api/users', users);
 app.use('/api/friends', friends);
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 0b1d72eb940b0569146e4cd861f9db811bec61cf
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
