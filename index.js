@@ -46,8 +46,8 @@ app.use('/api/users', users);
 app.use('/api/friends', friends);
 
 
-app.get('/test', (req, res) => {
-  res.send('Welcome');
+app.get('/api/users/test', (req, res) => {
+  res.json({msg:"It'sworking"});
 });
 
 app.get('*', (req, res) => {
