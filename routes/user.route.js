@@ -8,7 +8,7 @@ const Friend = require('../models/friend.model');
 
 
 router.post('/register', (req, res, next) => {
-  let newUser = new User ({
+  /*let newUser = new User ({
     email: req.body.email,
     name: req.body.name,
     password: req.body.password
@@ -21,7 +21,8 @@ router.post('/register', (req, res, next) => {
     } else {
       res.json({success: true, msg: 'Utilisateur inscrit'});
     }
-  });
+  });*/
+  res.json({success: true, msg: 'Utilisateur inscrit'});
 });
 
 router.put('/update-profile', (req, res, next) => {
