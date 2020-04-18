@@ -23,7 +23,7 @@ const app = express();
 
 const users = require('./routes/user.route');
 const friends = require('./routes/friend.route');
-
+console.log(users);
 
 const port = process.env.PORT || 8080;
 
