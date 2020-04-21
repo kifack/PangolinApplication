@@ -13,8 +13,8 @@ export class AuthService {
    user:any;
 
   constructor(private http:HttpClient) {
-  	// this.ROOT_URL="http://localhost:8080/api/users";
-    this.ROOT_URL="api/users";
+  	this.ROOT_URL="http://localhost:8080/api/users";
+    // this.ROOT_URL="api/users";
    }
 
    registerUser(user) {
@@ -93,6 +93,5 @@ export class AuthService {
     return JSON.parse(localStorage.getItem('user'));
     
   }
-
 
 }

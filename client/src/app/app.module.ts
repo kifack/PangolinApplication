@@ -21,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FriendComponent } from './components/friend/friend.component';
 import { FriendDetailsComponent } from './components/dashboard/friend-details/friend-details.component';
+import { AddFriendComponent } from './components/add-friend/add-friend.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FriendDetailsComponent } from './components/dashboard/friend-details/fr
     ProfileComponent,
     HomeComponent,
     FriendComponent,
-    FriendDetailsComponent
+    FriendDetailsComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,

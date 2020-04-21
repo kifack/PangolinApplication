@@ -9,8 +9,8 @@ export class FriendService {
   readonly ROOT_URL;
  
   constructor(private http:HttpClient) {
-  	// this.ROOT_URL="http://localhost:8080/api/friends";
-    this.ROOT_URL="api/friends";
+  	this.ROOT_URL="http://localhost:8080/api/friends";
+    // this.ROOT_URL="api/friends";
    }
 
   addFriend(friend) {
@@ -37,6 +37,13 @@ export class FriendService {
      let headers = new HttpHeaders();
      headers.append('Content-Type', 'application/json');
      return this.http.delete(`${this.ROOT_URL}/delete-friend/${friend._id}`);
+  }
+
+  addAnonymFriend(user){
+    
+    let headers=new HttpHeaders();
+
+    return this.http.post(`${this.ROOT_URL}/add-anonym-friend`, user, {headers: headers});
   }
 
 }

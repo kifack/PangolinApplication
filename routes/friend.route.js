@@ -58,5 +58,38 @@ router.delete('/delete-friend/:id',passport.authenticate('jwt', {session:false})
  
 });
 
+router.post('/add-anonym-friend',passport.authenticate('jwt', {session:false}),(req,res) => {
+  
+    let newUser = new User ({
+      email: req.body.email,
+      name: req.body.name,
+      password: req.body.password
+    });
+
+    User.addUser(newUser, (err, user) => {
+    if(err) {
+      res.json({success: false, msg: "Erreur lors de la creation du compte anonym"});
+    } else {
+     
+       let friend=new Friend({
+         user:req.user._id,
+         friend:user._id
+       }) ;
+
+       friend.save((err) => {
+           if(err) {
+            res.json({success: false, msg: "Erreur lors de l'ajout"});
+          } else {
+            res.json({success: true, friend: friend});
+          }
+       });
+        
+    }
+  });
+
+    
+
+});
+
 
 module.exports = router;

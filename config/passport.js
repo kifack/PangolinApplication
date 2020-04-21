@@ -12,9 +12,9 @@ opts.jwtFromRequest = ExtractJwt.fromAuthHeaderWithScheme('jwt');
   opts.secretOrKey = config.secret;
 
   passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
-    console.log(jwt_payload)
+ 
     User.getUserById(jwt_payload.data._id, (err, user) => {
-      console.log(user)
+   
       if(err) {
         return done(null, false, { message: "bad username or passwords don't match" });
       }

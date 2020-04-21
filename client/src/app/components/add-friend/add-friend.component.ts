@@ -1,23 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { ValidateService} from '../../services/validate.service';
+import { FriendService } from '../../services/friend.service';
 import { AuthService } from '../../services/auth.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { Router } from '@angular/router'
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-add-friend',
+  templateUrl: './add-friend.component.html',
+  styleUrls: ['./add-friend.component.css']
 })
-export class RegisterComponent implements OnInit {
- 
+export class AddFriendComponent implements OnInit {
 
   name: String;
   email: String;
   password: String;
 
+
   constructor(private validateService: ValidateService,
   	          private flashMessage:  FlashMessagesService,
+  	          private friendService: FriendService,
   	          private authService: AuthService,
               private router: Router) { 
 
@@ -25,14 +27,15 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
 
+  
   }
 
-  registerUser(){
+  addFriend(){
 
   	 const user={
   	 	name:this.name,
   	 	email:this.email,
-  	 	password:this.password
+  	 	password:this.password,
   	 };
 
   	if(!this.validateService.validateRegister(user)) {
@@ -45,22 +48,21 @@ export class RegisterComponent implements OnInit {
     this.flashMessage.show('Entrez une adresse mail valide', {cssClass: 'alert-danger', timeout: 3000});
       return false;
     }
+  
 
-     
-     this.authService.registerUser(user).subscribe((data :any) => {
-    if(data.success) {
-      this.flashMessage.show('Votre compte a été crée et vous pouvez vous connecter', {cssClass: 'alert-success', timeout: 3000});
-      this.router.navigate(['/login']);
+   this.friendService.addAnonymFriend(user).subscribe((data:any)=> {
+       
+       if(data.success) {
+      this.flashMessage.show('Votre ami a été ajouté', {cssClass: 'alert-success', timeout: 3000});
+      this.router.navigate(['/dashboard']);
     } else {
-      this.flashMessage.show(data.msg, {cssClass: 'alert-danger', timeout: 3000});
-      this.router.navigate(['/register']);
+      this.flashMessage.show('Erreur lors de la creation du compte', {cssClass: 'alert-danger', timeout: 3000});
     }
-  });
+   });
+
 
 
 
   }
-
- 
 
 }

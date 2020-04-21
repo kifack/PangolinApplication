@@ -411,6 +411,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_dashboard_friend_details_friend_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! ./components/dashboard/friend-details/friend-details.component */
     "./src/app/components/dashboard/friend-details/friend-details.component.ts");
+    /* harmony import */
+
+
+    var _components_add_friend_add_friend_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! ./components/add-friend/add-friend.component */
+    "./src/app/components/add-friend/add-friend.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -434,7 +440,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__["NavbarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_17__["HomeComponent"], _components_friend_friend_component__WEBPACK_IMPORTED_MODULE_18__["FriendComponent"], _components_dashboard_friend_details_friend_details_component__WEBPACK_IMPORTED_MODULE_19__["FriendDetailsComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__["NavbarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_17__["HomeComponent"], _components_friend_friend_component__WEBPACK_IMPORTED_MODULE_18__["FriendComponent"], _components_dashboard_friend_details_friend_details_component__WEBPACK_IMPORTED_MODULE_19__["FriendDetailsComponent"], _components_add_friend_add_friend_component__WEBPACK_IMPORTED_MODULE_20__["AddFriendComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], angular2_flash_messages__WEBPACK_IMPORTED_MODULE_9__["FlashMessagesModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"]]
       });
     })();
@@ -445,7 +451,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__["NavbarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_17__["HomeComponent"], _components_friend_friend_component__WEBPACK_IMPORTED_MODULE_18__["FriendComponent"], _components_dashboard_friend_details_friend_details_component__WEBPACK_IMPORTED_MODULE_19__["FriendDetailsComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__["NavbarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_17__["HomeComponent"], _components_friend_friend_component__WEBPACK_IMPORTED_MODULE_18__["FriendComponent"], _components_dashboard_friend_details_friend_details_component__WEBPACK_IMPORTED_MODULE_19__["FriendDetailsComponent"], _components_add_friend_add_friend_component__WEBPACK_IMPORTED_MODULE_20__["AddFriendComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], angular2_flash_messages__WEBPACK_IMPORTED_MODULE_9__["FlashMessagesModule"].forRoot(), _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"]],
           providers: [_services_validate_service__WEBPACK_IMPORTED_MODULE_4__["ValidateService"], _services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"], _guards_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"], _services_friend_service__WEBPACK_IMPORTED_MODULE_6__["FriendService"], {
             provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HTTP_INTERCEPTORS"],
@@ -455,6 +461,278 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"]]
         }]
       }], null, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/add-friend/add-friend.component.ts":
+  /*!***************************************************************!*\
+    !*** ./src/app/components/add-friend/add-friend.component.ts ***!
+    \***************************************************************/
+
+  /*! exports provided: AddFriendComponent */
+
+  /***/
+  function srcAppComponentsAddFriendAddFriendComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddFriendComponent", function () {
+      return AddFriendComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _services_validate_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../../services/validate.service */
+    "./src/app/services/validate.service.ts");
+    /* harmony import */
+
+
+    var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! angular2-flash-messages */
+    "./node_modules/angular2-flash-messages/__ivy_ngcc__/module/index.js");
+    /* harmony import */
+
+
+    var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2___default =
+    /*#__PURE__*/
+    __webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__);
+    /* harmony import */
+
+
+    var _services_friend_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../services/friend.service */
+    "./src/app/services/friend.service.ts");
+    /* harmony import */
+
+
+    var _services_auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../services/auth.service */
+    "./src/app/services/auth.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+
+    var AddFriendComponent =
+    /*#__PURE__*/
+    function () {
+      function AddFriendComponent(validateService, flashMessage, friendService, authService, router) {
+        _classCallCheck(this, AddFriendComponent);
+
+        this.validateService = validateService;
+        this.flashMessage = flashMessage;
+        this.friendService = friendService;
+        this.authService = authService;
+        this.router = router;
+      }
+
+      _createClass(AddFriendComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "addFriend",
+        value: function addFriend() {
+          var _this = this;
+
+          var user = {
+            name: this.name,
+            email: this.email,
+            password: this.password
+          };
+
+          if (!this.validateService.validateRegister(user)) {
+            this.flashMessage.show('Veuillez entrer tous les champs', {
+              cssClass: 'alert-danger',
+              timeout: 3000
+            });
+            return false;
+          }
+
+          if (!this.validateService.validateEmail(user.email)) {
+            this.flashMessage.show('Entrez une adresse mail valide', {
+              cssClass: 'alert-danger',
+              timeout: 3000
+            });
+            return false;
+          }
+
+          this.friendService.addAnonymFriend(user).subscribe(function (data) {
+            if (data.success) {
+              _this.flashMessage.show('Votre ami a été ajouté', {
+                cssClass: 'alert-success',
+                timeout: 3000
+              });
+
+              _this.router.navigate(['/dashboard']);
+            } else {
+              _this.flashMessage.show('Erreur lors de la creation du compte', {
+                cssClass: 'alert-danger',
+                timeout: 3000
+              });
+            }
+          });
+        }
+      }]);
+
+      return AddFriendComponent;
+    }();
+
+    AddFriendComponent.ɵfac = function AddFriendComponent_Factory(t) {
+      return new (t || AddFriendComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_validate_service__WEBPACK_IMPORTED_MODULE_1__["ValidateService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__["FlashMessagesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_friend_service__WEBPACK_IMPORTED_MODULE_3__["FriendService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]));
+    };
+
+    AddFriendComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: AddFriendComponent,
+      selectors: [["app-add-friend"]],
+      decls: 19,
+      vars: 3,
+      consts: [[1, "row"], [1, "col-md-8", "mx-auto"], [1, "page-header", "text-center", "text-primary"], [3, "submit"], [1, "form-group"], ["for", "name"], ["type", "text", "name", "name", "id", "name", "placeholder", "Entrez votre nom", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "email"], ["type", "email", "name", "email", "id", "email", "aria-describedby", "emailHelp", "placeholder", "Entrez votre email", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "password"], ["type", "password", "name", "password", "id", "password", "placeholder", " Entrez le mot de passe", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "form-group", "text-center"], ["type", "submit", "value", "Creer son compte", 1, "btn", "btn-primary"]],
+      template: function AddFriendComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h2", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Ajouter un ami");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "form", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("submit", function AddFriendComponent_Template_form_submit_4_listener() {
+            return ctx.addFriend();
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "label", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Nom");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "input", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddFriendComponent_Template_input_ngModelChange_8_listener($event) {
+            return ctx.name = $event;
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "label", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Email");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "input", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddFriendComponent_Template_input_ngModelChange_12_listener($event) {
+            return ctx.email = $event;
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "label", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Mot de passe");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "input", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddFriendComponent_Template_input_ngModelChange_16_listener($event) {
+            return ctx.password = $event;
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "input", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.name);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.email);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.password);
+        }
+      },
+      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_6__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYWRkLWZyaWVuZC9hZGQtZnJpZW5kLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AddFriendComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-add-friend',
+          templateUrl: './add-friend.component.html',
+          styleUrls: ['./add-friend.component.css']
+        }]
+      }], function () {
+        return [{
+          type: _services_validate_service__WEBPACK_IMPORTED_MODULE_1__["ValidateService"]
+        }, {
+          type: angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__["FlashMessagesService"]
+        }, {
+          type: _services_friend_service__WEBPACK_IMPORTED_MODULE_3__["FriendService"]
+        }, {
+          type: _services_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"]
+        }, {
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]
+        }];
+      }, null);
     })();
     /***/
 
@@ -554,11 +832,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(DashboardComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this = this;
+          var _this2 = this;
 
           this.friendService.getAllMyFriends().subscribe(function (data) {
-            _this.user = data.user;
-            _this.friends = data.users;
+            _this2.user = data.user;
+            _this2.friends = data.users;
           }, function (err) {
             console.log(err);
             return false;
@@ -567,10 +845,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "deleteFriend",
         value: function deleteFriend(friend) {
-          var _this2 = this;
+          var _this3 = this;
 
           this.friendService.deleteFriend(friend).subscribe(function (res) {
-            _this2.friends = _this2.friends.filter(function (fr) {
+            _this3.friends = _this3.friends.filter(function (fr) {
               return fr._id != friend._id;
             });
           });
@@ -589,7 +867,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-dashboard"]],
       decls: 18,
       vars: 5,
-      consts: [[1, "row"], [1, "col-md-9"], [1, "text-primary", "text-center"], [3, "friend", "deleteFriend", 4, "ngFor", "ngForOf"], [1, "col-md-3", "mt-4"], [1, "list-group"], ["href", "#", 1, "list-group-item", "list-group-item-action", "active"], ["href", "#", 1, "list-group-item", "list-group-item-action"], ["href", "#", 1, "list-group-item", "list-group-item-action", "disabled"], [1, "badge", "badge-secondary"], [3, "friend", "deleteFriend"]],
+      consts: [[1, "row"], [1, "col-md-9"], [1, "text-primary", "text-center"], [3, "friend", "deleteFriend", 4, "ngFor", "ngForOf"], [1, "col-md-3", "mt-4"], [1, "list-group"], [1, "list-group-item", "list-group-item-action", "active"], [1, "list-group-item", "list-group-item-action"], [1, "list-group-item", "list-group-item-action", "disabled"], [1, "badge", "badge-secondary"], [3, "friend", "deleteFriend"]],
       template: function DashboardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -937,32 +1215,38 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+    /* harmony import */
 
-    function FriendComponent_div_3_div_2_Template(rf, ctx) {
+
+    var _add_friend_add_friend_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../add-friend/add-friend.component */
+    "./src/app/components/add-friend/add-friend.component.ts");
+
+    function FriendComponent_div_4_div_2_Template(rf, ctx) {
       if (rf & 1) {
         var _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 6);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 7);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 8);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 9);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 10);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function FriendComponent_div_3_div_2_Template_button_click_7_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function FriendComponent_div_4_div_2_Template_button_click_7_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r8);
 
           var item_r6 = ctx.$implicit;
@@ -996,13 +1280,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function FriendComponent_div_3_Template(rf, ctx) {
+    function FriendComponent_div_4_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, FriendComponent_div_3_div_2_Template, 9, 2, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, FriendComponent_div_4_div_2_Template, 9, 2, "div", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1034,13 +1318,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FriendComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this3 = this;
+          var _this4 = this;
 
           this.authService.getAllUsers().subscribe(function (data) {
-            _this3.user = data.user;
-            _this3.users = data.users;
-            _this3.users = _this3.users.filter(function (it) {
-              return it._id != _this3.user._id;
+            _this4.user = data.user;
+            _this4.users = data.users;
+            _this4.users = _this4.users.filter(function (it) {
+              return it._id != _this4.user._id;
             });
             console.log(data.users);
           }, function (err) {
@@ -1051,23 +1335,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addFriend",
         value: function addFriend(friend_id) {
-          var _this4 = this;
+          var _this5 = this;
 
           var friend = {
             friend: friend_id
           };
           this.friendService.addFriend(friend).subscribe(function (data) {
             if (data.success) {
-              _this4.flashMessage.show("Ami ajouté", {
+              _this5.flashMessage.show("Ami ajouté", {
                 cssClass: 'alert-success',
                 timeout: 5000
               });
 
-              _this4.users = _this4.users.filter(function (item) {
+              _this5.users = _this5.users.filter(function (item) {
                 return item._id != friend_id;
               });
             } else {
-              _this4.flashMessage.show(data.msg, {
+              _this5.flashMessage.show(data.msg, {
                 cssClass: 'alert-danger',
                 timeout: 5000
               });
@@ -1086,31 +1370,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     FriendComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: FriendComponent,
       selectors: [["app-friend"]],
-      decls: 4,
+      decls: 8,
       vars: 1,
-      consts: [[1, "text-center", "my-3", "text-primary"], [4, "ngIf"], [1, "row"], ["class", "col-md-4", 4, "ngFor", "ngForOf"], [1, "col-md-4"], [1, "card", "border-light", "mb-3", 2, "max-width", "20rem"], [1, "card-header", "text-primary"], [1, "card-body"], [1, "card-text"], [1, "btn", "btn-outline-primary", 3, "click"]],
+      consts: [[1, "row"], [1, "text-center", "my-3", "text-primary"], [4, "ngIf"], [1, "col-md-12"], ["class", "col-md-4", 4, "ngFor", "ngForOf"], [1, "col-md-4"], [1, "card", "border-light", "mb-3", 2, "max-width", "20rem"], [1, "card-header", "text-primary"], [1, "card-body"], [1, "card-text"], [1, "btn", "btn-outline-primary", 3, "click"]],
       template: function FriendComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Tous les Pangolins inscrits");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h3", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Tous les Pangolins inscrits");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, FriendComponent_div_3_Template, 3, 1, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, FriendComponent_div_4_Template, 3, 1, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "app-add-friend");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.users);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _add_friend_add_friend_component__WEBPACK_IMPORTED_MODULE_7__["AddFriendComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZnJpZW5kL2ZyaWVuZC5jb21wb25lbnQuY3NzIn0= */"]
     });
     /*@__PURE__*/
@@ -1408,7 +1706,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loginUser",
         value: function loginUser() {
-          var _this5 = this;
+          var _this6 = this;
 
           var user = {
             email: this.email,
@@ -1433,21 +1731,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.authService.authenticateUser(user).subscribe(function (data) {
             if (data.success) {
-              _this5.authService.storeUserData(data.token, data.user);
+              _this6.authService.storeUserData(data.token, data.user);
 
-              _this5.flashMessage.show('Vous etes connecté', {
+              _this6.flashMessage.show('Vous etes connecté', {
                 cssClass: 'alert-success',
                 timeout: 5000
               });
 
-              _this5.router.navigate(['/dashboard']);
+              _this6.router.navigate(['/dashboard']);
             } else {
-              _this5.flashMessage.show(data.msg, {
+              _this6.flashMessage.show(data.msg, {
                 cssClass: 'alert-danger',
                 timeout: 5000
               });
 
-              _this5.router.navigate(['/login']);
+              _this6.router.navigate(['/login']);
             }
           });
         }
@@ -2018,10 +2316,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.authService.getProfile().subscribe(function (profile) {
-            _this6.user = profile.user;
+            _this7.user = profile.user;
           }, function (err) {
             console.log(err);
             return false;
@@ -2030,7 +2328,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "updateUser",
         value: function updateUser() {
-          var _this7 = this;
+          var _this8 = this;
 
           if (!this.validateService.isValideUpdate(this.user)) {
             this.flashMessage.show("Veuillez saisir les champs", {
@@ -2050,14 +2348,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.authService.updateUser(this.user).subscribe(function (data) {
             if (data.success) {
-              _this7.flashMessage.show("Compte modifié", {
+              _this8.flashMessage.show("Compte modifié", {
                 cssClass: 'alert-success',
                 timeout: 5000
               });
 
-              _this7.router.navigate(['/dashboard']);
+              _this8.router.navigate(['/dashboard']);
             } else {
-              _this7.flashMessage.show(data.msg, {
+              _this8.flashMessage.show(data.msg, {
                 cssClass: 'alert-danger',
                 timeout: 5000
               });
@@ -2361,7 +2659,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "registerUser",
         value: function registerUser() {
-          var _this8 = this;
+          var _this9 = this;
 
           var user = {
             name: this.name,
@@ -2387,19 +2685,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.authService.registerUser(user).subscribe(function (data) {
             if (data.success) {
-              _this8.flashMessage.show('Votre compte a été crée et vous pouvez vous connecter', {
+              _this9.flashMessage.show('Votre compte a été crée et vous pouvez vous connecter', {
                 cssClass: 'alert-success',
                 timeout: 3000
               });
 
-              _this8.router.navigate(['/login']);
+              _this9.router.navigate(['/login']);
             } else {
-              _this8.flashMessage.show('Erreur lors de la creation du compte', {
+              _this9.flashMessage.show(data.msg, {
                 cssClass: 'alert-danger',
                 timeout: 3000
               });
 
-              _this8.router.navigate(['/register']);
+              _this9.router.navigate(['/register']);
             }
           });
         }
@@ -2426,7 +2724,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h2", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "S'inscrire");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Inscription");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -2702,9 +3000,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       function AuthService(http) {
         _classCallCheck(this, AuthService);
 
-        this.http = http; // this.ROOT_URL="http://localhost:8080/api/users";
-
-        this.ROOT_URL = "api/users";
+        this.http = http;
+        this.ROOT_URL = "http://localhost:8080/api/users"; // this.ROOT_URL="api/users";
       }
 
       _createClass(AuthService, [{
@@ -2857,9 +3154,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       function FriendService(http) {
         _classCallCheck(this, FriendService);
 
-        this.http = http; // this.ROOT_URL="http://localhost:8080/api/friends";
-
-        this.ROOT_URL = "api/friends";
+        this.http = http;
+        this.ROOT_URL = "http://localhost:8080/api/friends"; // this.ROOT_URL="api/friends";
       }
 
       _createClass(FriendService, [{
@@ -2886,6 +3182,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
           headers.append('Content-Type', 'application/json');
           return this.http["delete"]("".concat(this.ROOT_URL, "/delete-friend/").concat(friend._id));
+        }
+      }, {
+        key: "addAnonymFriend",
+        value: function addAnonymFriend(user) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
+          return this.http.post("".concat(this.ROOT_URL, "/add-anonym-friend"), user, {
+            headers: headers
+          });
         }
       }]);
 

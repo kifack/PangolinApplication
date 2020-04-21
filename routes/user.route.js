@@ -8,20 +8,34 @@ const Friend = require('../models/friend.model');
 
 
 router.post('/register', (req, res, next) => {
-  let newUser = new User ({
-    email: req.body.email,
-    name: req.body.name,
-    password: req.body.password
-  });
+  
 
+  User.getUserByEmail(req.body.email,(err,user) => {
+    if(err)res.json({success: false, msg: "Une erreur est survenue"});
+    if(user){
+        
+        res.json({success: false, msg: "Email deja utilisé"});
+    }else{
+       let newUser = new User ({
+        email: req.body.email,
+        name: req.body.name,
+        password: req.body.password
+     });
 
-  User.addUser(newUser, (err, user) => {
-    if(err) {
-      res.json({success: false, msg: "Erreur lors de la creation du compte"});
-    } else {
-      res.json({success: true, msg: 'Utilisateur inscrit'});
+     User.addUser(newUser, ( err, doc) => {
+        if(err) {
+          res.json({success: false, msg: "Erreur lors de l'incription"});
+        } else {
+          res.json({success: true, msg: 'Utilisateur inscrit'});
+        }
+     });
     }
+
+
   });
+
+
+  
   
 });
 
