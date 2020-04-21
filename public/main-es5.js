@@ -1326,7 +1326,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             _this4.users = _this4.users.filter(function (it) {
               return it._id != _this4.user._id;
             });
-            console.log(data.users);
           }, function (err) {
             console.log(err);
             return false;

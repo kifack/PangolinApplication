@@ -25,7 +25,6 @@ export class FriendComponent implements OnInit {
       this.user = data.user;
       this.users = data.users;
       this.users= this.users.filter((it) => it._id!=this.user._id);
-      console.log(data.users);
     },
      err => {
        console.log(err);
