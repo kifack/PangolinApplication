@@ -1,7 +1,16 @@
-Application Apangolin
+<h2>Application pangolin</h2>
+<p>
+    Cr√©ation d'un mini carnet d'adresse "Pangolin" avec Angular et NodeJS, comportant les fonctionnalit√©s suivantes
+</p>
 
-L'objectif est de crÈer un mini carnet d'adresse pour "Pangolin" sur Express.js (sous forme d'API) avec un front sur angular &  DB Mongo. 
+<ul>
+    <li>(Inscription/Connexion/D√©connexion) du "Pangolin" par login/mot de passe </li>
+    <li>(Afficher/Modifier) ses informations (age / famille / race / nourriture) </li>
+    <li>(Ajouter/Supprimer) en amis un autre "Pangolin" parmi les autres Pangolins inscrits.</li>
+</ul>
 
-(Inscription/Connexion/DÈconnexion) du "Pangolin" par login/mot de passe 
-(Afficher/Modifier) ses informations (age / famille / race / nourriture) 
-(Ajouter/Supprimer) en amis un autre "Pangolin" parmi les autres Pangolins inscrits.
+
+<img src="screenshots/home.png" alt="">
+<img src="screenshots/register.png" alt="">
+<img src="screenshots/login.png" alt="">
+<img src="screenshots/friends.png" alt="">
